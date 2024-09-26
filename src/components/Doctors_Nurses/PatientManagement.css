@@ -1,0 +1,39 @@
+/* Body styles */
+.patient-management-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Page title styles */
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Button container styles */
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,41 @@
+.admin-signup-container {
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 180px auto;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .signup-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: white;
+    color: black;
+  }
+  

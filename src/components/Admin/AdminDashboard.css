@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+  .admin-dashboard-container {
+    display: flex;
+  }
+  
+  .side-panel {
+    width: 200px; /* Adjust as needed */
+    background-color: #ffcc00; /* Yellow background */
+    padding: 20px;
+    color: #fff; /* White text color */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .menu-items li:hover {
+    background-color: #ffd966; /* Lighter yellow on hover */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Placeholder styles for menu content */
+  .main-content div {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Animation example (fade in) */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .main-content div.fade-in {
+    animation: fadeIn 0.5s ease forwards; /* Apply fade-in animation */
+  }
+  

@@ -1,0 +1,161 @@
+/* NurseDashboard.css */
+
+/* General Styles */
+body {
+  background-color: #f0f2f5; /* Soft White */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Dark Gray for text */
+}
+
+/* Horizontal Sidebar */
+.horizontal-sidebar {
+  background-color: #ffc107; /* Vivid Yellow */
+  color: #333; /* Dark Gray */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.dashboard-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Dark Gray */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Vertical Sidebar */
+.sidebar {
+  background-color: #333; /* Dark Gray */
+  color: #fff; /* White */
+  width: 200px;
+  height: calc(100vh - 60px); /* Reduced height */
+  position: fixed;
+  top: 60px; /* Adjusted top position */
+  left: 0;
+  overflow-y: auto;
+  padding-top: 10px; /* Adjusted padding */
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px; /* Add space between buttons */
+}
+
+
+/* Main Content */
+.main-content {
+  margin-left: 220px; /* Increased margin for space */
+  margin-top: 80px; /* Adjusted margin for space */
+  padding: 20px;
+  background-color: #fff; /* White */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated Card */
+.animated-card {
+  background-color: #fff; /* White */
+  color: #333; /* Dark Gray */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-card:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+  background-color: #fff; /* White */
+  color: #333; /* Dark Gray */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Patient Table */
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patient-table th,
+.patient-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Task Management */
+.task-list li {
+  margin-bottom: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: #ebbb2c; /* Vivid Yellow */
+  color: #333; /* Dark Gray */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffca28; /* Lighter Yellow on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
